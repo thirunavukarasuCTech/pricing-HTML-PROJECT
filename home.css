@@ -1,0 +1,232 @@
+body {
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header h1 {
+    padding: 30px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: hsl(233, 13%, 49%);
+}
+
+.check-label {
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(233, 13%, 49%);
+    font-size: 0.7rem;
+}
+
+#toggle-checkbox {
+    color: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    transform: scale(1.5);
+    /* You can adjust the scale factor according to your preference */
+}
+
+.image1,
+.image2 {
+    position: fixed;
+    width: 25vw;
+    height: 25vh;
+    z-index: -1;
+}
+
+.image1 {
+    bottom: 150px;
+    left: 0;
+}
+
+.image2 {
+    top: 50px;
+    right: 20px;
+}
+
+.container {
+    gap: 0;
+    width: 850px;
+    text-align: center;
+    /* Adjust the top padding to increase height */
+    padding-bottom: 50px;
+    /* Adjust the bottom padding to increase height */
+}
+
+
+.container .row {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.salary-column {
+    background-color: #ffffff;
+    /* padding: 0px; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    align-items: end;
+    margin: 20px;
+    transform: scale(1);
+    transition: transform 0.3s ease,
+    box-shadow 0.3s ease,
+    background-color 0.3s ease;
+}
+
+
+.salary-column:hover {
+    color: white;
+    transform: translateY(-10px) scale(1.05);
+    background-image: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+}
+
+.salary-column:hover .currency,
+.salary-column:hover .dolor,
+.salary-column:hover.details {
+    color: white;
+}
+
+.salary-column:hover .details {
+    color: white;
+}
+
+.salary-column h2 {
+    font-size: 12px;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.salary-column {
+    color: hsl(233, 13%, 49%);
+    padding: 0;
+    margin: 0;
+
+}
+
+.salary-column .price-container {
+    display: flex;
+    align-content: center;
+    vertical-align: middle;
+}
+
+.price-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+.currency {
+    font-size: 24px;
+    margin-right: 5px;
+    margin-left: -1px; 
+    color: hsl(232, 13%, 33%);
+}
+
+
+.dolor {
+    color: hsl(232, 13%, 33%);
+}
+
+.btn {
+    align-items: center;
+    color:linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    height: auto;
+    width: 70%;
+    border: 1px solid linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    background: white; 
+    font-weight: 300;
+    transition: background 0.3s ease; /* Apply transition to the background property */
+    margin-bottom: 30px;
+}
+
+.btn:hover {
+    background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%)); /* Change background color on hover */
+    border: 1px solid white;
+}
+
+@media (max-width: 1440px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    h4 {
+        font-size: 16px;
+    }
+
+    h5 {
+        font-size: 14px;
+    }
+
+    h6 {
+        font-size: 12px;
+    }
+}
+
+
+@media (min-width: 375px) and (max-width: 1440px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    h4 {
+        font-size: 18px;
+    }
+
+    h5 {
+        font-size: 16px;
+    }
+
+    h6 {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 1440px) {
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    h4 {
+        font-size: 20px;
+    }
+
+    h5 {
+        font-size: 18px;
+    }
+
+    h6 {
+        font-size: 16px;
+    }
+}
